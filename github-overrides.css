@@ -1,0 +1,32 @@
+.hero {
+  grid-template-columns: minmax(0, 1fr);
+  min-height: auto;
+  padding-block: clamp(5.5rem, 11vw, 9rem);
+}
+
+.hero-copy {
+  max-width: 980px;
+}
+
+.hero h1 {
+  max-width: 900px;
+  font-size: clamp(4rem, 9.5vw, 8rem);
+}
+
+.hero-lead {
+  max-width: 760px;
+}
+
+.hero-credentials {
+  max-width: 760px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-block: 4.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.25rem, 16vw, 5.5rem);
+  }
+}
